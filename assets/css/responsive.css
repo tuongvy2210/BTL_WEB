@@ -1,0 +1,55 @@
+/* màn hình table */
+@media (min-width:801px) and (max-width: 1023px) 
+{
+    nav .vt-logo img {
+        display: none;
+    }
+}
+
+/* Màn hình mobile */
+@media only screen and (max-width: 800px) {
+    #header{
+        width: 100%;
+    }
+    .car-list{
+        padding: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #main{
+        width: 100%;
+    }
+    .car{
+     flex: 50%;   
+    }
+    .car img{
+        height: 180px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    nav .vt-logo img {
+        display: none;
+    }
+    nav .vt-item a {
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+    nav .vt-item p {
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+    nav .vt-item {
+        margin-right: 1.5rem;
+    }
+    .header-backfround .header_text h4 {
+        font-size: 32px;
+    }
+
+    .header-backfround .header_text STRONG {
+        font-size: 32PX;
+    }
+
+    .search{
+        display: none;
+    }
+ }
+

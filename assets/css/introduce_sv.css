@@ -1,0 +1,867 @@
+/* style intruduce */
+
+
+
+:root {
+    --alBlack: #000000;
+    --alBlackF: #242529;
+    --vtWhite: #ffffff;
+    --alBlue: #DEE8F4;
+    --alBlueA: #2596cf;
+    --alBlueHMb: #c6d7ec;
+    --alGray: #F5F5F5;
+    --alGrayListCars: #E1E1E1;
+    --alGrayInfoCars: #555;
+    --alBreadcrumb: #999;
+    --alRed: #ED2028;
+    --alRedHover: #bd0f15;
+    --alListLink: #293241;
+    --vtbackground: #262626;
+    --vtyellow: #ffcd00;
+    --vtbghome: #0A0E1A;
+    --vtbgmenu: #182134;
+    --vtcolorlink: #FF9900;
+    --vtcolorlinkHover: #cc7a00;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: var(--vtWhite);
+}
+
+body {
+    /* background-image: url(./img/backgound.jpg); */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    color: var(--vtcolorlink);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.vt-clear-fix {
+    clear: both;
+}
+
+
+
+a:hover {
+    color: var(--vtcolorlink);
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+
+
+.vt-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+
+.vt-price {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-align: right;
+    font-weight: 700;
+}
+
+.vt-title {
+    padding-bottom: 1.5em;
+    padding-top: 60px;
+}
+
+.vt-title h2 {
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.cart-shopping{
+    text-transform: uppercase;
+    font-weight: bold ;
+}
+
+
+/* gioi thieu */
+nav {
+    position: relative;
+    background: var(--vtbgmenu);
+
+}
+
+.vt-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+
+}
+
+.vt-wrapper .vt-col-l {
+    flex-basis: 60%;
+}
+
+.vt-wrapper .vt-col-r {
+    flex-basis: 28%;
+}
+
+/*giới thiệu salon*/
+.vt-col-l h2 {
+    margin: 2rem 0;
+}
+
+.vt-col-l .vt-text {
+    padding-left: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+    
+   
+}
+
+.vt-col-l .vt-text i {
+    font-size: 6px;
+    margin-right: 7px;
+}
+
+.vt-col-l .vt-text a {
+    color: var(--alBlueA);
+}
+
+.vt-col-l .vt-description {
+    margin-top: 2rem;
+}
+
+.vt-col-l .vt-info {
+    margin-bottom: 1.5rem;
+}
+
+.vt-col-l .vt-info a:hover {
+    color: var(--alRed);
+}
+
+.vt-col-l p {
+    margin-bottom: 1.5rem;
+}
+
+.vt-menu .subnavs:hover .subnav{
+    display: block;
+}
+
+.subnavs{
+    position: relative;
+}
+.subnav{
+    width: 300px;
+    height: 80px;
+}
+
+.vt-menu .subnav li a{
+color: white;
+font-size: 20px;
+font-weight: bold;
+}
+
+.vt-menu .subnav li:hover a{
+    
+}
+
+.vt-menu .subnav{
+    display: none;
+    position: absolute;
+    background-color:black;
+    opacity: 0.8;
+    top: 100%;
+    left: 0;
+}
+
+.vt-menu .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+/*xe mói về*/
+
+.vt-col-r .vt-new-car {
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vt-col-r .vt-new-car .vt-item {
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #cdcdca;
+    padding: 1.5rem 0;
+}
+
+
+.vt-col-r .vt-new-car .vt-item:first-child {
+    padding-top: 0;
+}
+
+.vt-col-r .vt-new-car .vt-item:last-child {
+    border-bottom: none;
+}
+
+.vt-col-r .vt-item .vt-img {
+    flex-basis: 35%;
+}
+
+.vt-col-r .vt-item .vt-info-car {
+    flex-basis: 61%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.vt-col-r .vt-item .vt-info-car .vt-price {
+    color: var(--alBlack);
+    background: var(--vtcolorlink);
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.vt-col-r .vt-item .vt-img img {
+    height: 78px;
+    border-radius: 4px;
+}
+
+.dich-vu-gt
+{
+    margin-left: 2em;
+}
+.dich-vu-gt li
+{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+   list-style:disc;
+}
+
+@media only screen and (max-width: 1230px) {
+    .vt-wrapper {
+        padding: 0 1.5rem 3rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .vt-wrapper .vt-col-l {
+        flex-basis: 100%;
+    }
+
+    .vt-wrapper .vt-col-r {
+        flex-basis: 100%;
+    }
+
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img {
+        flex-basis: 25%;
+    }
+
+    .vt-col-r .vt-item .vt-info-car {
+        flex-basis: 73%;
+    }
+
+    .vt-col-r .vt-item .vt-img img {
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vt-wrapper {
+        padding: 0 1rem 3rem;
+    }
+
+    /*giới thiệu salon*/
+    .vt-col-l .vt-description {
+        margin-top: 1.5rem;
+    }
+
+    .vt-col-l p {
+        margin-bottom: 1.5rem;
+    }
+
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img img {
+        height: 123px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img img {
+        height: 102px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /*giới thiệu salon*/
+    .vt-col-l .vt-info {
+        margin-bottom: 1rem;
+    }
+
+    .vt-col-l h2 {
+        margin: 1rem 0;
+    }
+
+    .vt-col-l .vt-title {
+        margin: 0;
+    }
+
+    .vt-col-l .vt-text {
+        margin-bottom: 1rem;
+    }
+
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img {
+        flex-basis: 30%;
+    }
+
+    .vt-col-r .vt-item .vt-info-car {
+        flex-basis: 68%;
+    }
+
+    .vt-col-r .vt-item .vt-img img {
+        height: 109px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*giới thiệu salon*/
+    .vt-col-l .vt-text {
+        padding-left: 1.5rem;
+    }
+
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img img {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    /*giới thiệu salon*/
+    .vt-col-l .vt-text-info {
+        padding-left: 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img {
+        flex-basis: 35%;
+    }
+
+    .vt-col-r .vt-item .vt-info-car {
+        flex-basis: 63%;
+    }
+
+    .vt-col-r .vt-item .vt-img img {
+        height: 91px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    /*xe mới về*/
+    .vt-col-r .vt-item .vt-img img {
+        height: 79px;
+    }
+}
+
+
+
+/* banner */
+/*slick slider*/
+#vt-banner {
+    position: relative;
+  
+}
+
+#vt-banner .slick-dots {
+    bottom: 20px !important;
+}
+
+#vt-banner .slick-dots li {
+    margin: 0 !important;
+}
+
+#vt-banner .slick-dots li.slick-active button:before {
+    color: var(--alRed) !important;
+}
+
+#vt-banner .slick-dots li button:before {
+    font-size: 1rem !important;
+    color: var(--alBlackF) !important;
+    opacity: 1 !important;
+}
+
+.slick-dotted .slick-slider {
+    margin-bottom: 0 !important;
+}
+
+
+.slick-slide img {
+    height: 675px;
+}
+
+@media only screen and (max-width: 991px) {
+    .slick-slide img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav .vt-logo {
+        padding: 1rem;
+    }
+
+    .slick-slide img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .slick-slide img {
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .slick-slide img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .slick-slide img {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .slick-slide img {
+        height: 200px;
+    }
+}
+
+
+/* menu */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+    background-image: url(./img/backgound.jpg);
+}
+
+nav .vt-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+nav .vt-logo img {
+    width: 220px;
+}
+
+nav .vt-menu {
+    display: flex;
+  
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .vt-item {
+    margin-left: 5rem;
+}
+
+nav .vt-item img {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    display: none;
+    object-fit: cover;
+    verticvt-align: middle;
+    margin-top: -3px;
+}
+
+nav .vt-item a {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.2rem;
+    color: var(--vtWhite);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .vt-item a:hover:before {
+    right: 0;
+}
+
+nav .vt-item a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -2px;
+    background: var(--vtcolorlink);
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.vt-active-menu {
+    color: var(--vtcolorlink) !important;
+    position: relative;
+    
+}
+
+.vt-active-menu:hover:before {
+    right: 100% !important;
+}
+
+menu .icon-nav {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1230px) {
+    nav .vt-container {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .vt-show-menu {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+        background: #fff;
+        flex-flow: column;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav .vt-container {
+        padding: 0;
+    }
+
+    nav .vt-item {
+        margin-left: 0;
+    }
+
+    nav .vt-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 100;
+        padding: 1.5rem;
+    }
+
+    nav .vt-icon-nav {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .vt-bar1, .vt-bar2, .vt-bar3 {
+        width: 35px;
+        height: 4px;
+        background: var(--vtyellow);
+        margin: 0.6rem 0;
+        transition: 0.4s;
+    }
+
+    nav .vt-container .vt-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+        z-index: 999;
+        overflow: auto;
+    }
+
+    nav .vt-container .vt-menu li {
+        padding: 4rem 0;
+    }
+
+    .vt-active-menu-mb-t {
+        background: var(--vtbgmenu);
+    }
+
+    .vt-active-menu-mb-b {
+        background: var(--vtbackground);
+    }
+    nav .vt-item a
+    {
+        padding-left: 0.5em;
+    }
+    nav .vt-item img {
+        width: 16px;
+        height: 16px;
+        
+        display: inline;
+       
+    }
+    nav .vt-container .vt-menu li {
+        
+        padding-left: 1em;
+        border-bottom: 1px solid #121212;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav .vt-container .vt-menu li {
+        padding: 3rem 0;
+        padding-left: 1em;
+        border-bottom: 1px solid #121212;
+        text-align: left;
+    }
+}
+
+
+/* gioi thieu ve sinh vien */
+
+
+
+/* .introducesv { */
+    /* display: flex; */
+    /* align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    /* margin-bottom: 4rem; */
+    /* padding-top: 120px;
+    padding-bottom: 20px;
+
+} */
+
+/* .introducesv h2
+{
+    text-align: center;
+}
+
+
+.ttsvsmall
+{
+padding-left: 60px;
+display: flex;
+padding-bottom: 20px;
+}
+
+.ttsvsmall h4
+{ 
+    padding-left: 10px;
+}
+.ttsv
+{
+    padding-left: 0%;
+    
+}
+
+.dsach ul li
+{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+  
+}
+
+@keyframes list
+{
+    from
+    {padding-left: 0%;}
+    to
+    {
+        padding-left: 400px;
+    }
+}
+
+.dsach ul svg
+{
+    position: relative;
+    animation: list 3s 3;
+}
+ */
+   /* Reset */
+   /* * {
+    margin: 0;
+    padding: 0;
+  } */
+  ul {
+    list-style: none;
+  }
+  body {
+    color: #bababa;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /* .clearfix {
+    zoom: 1;
+  } */
+  /* .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  } */
+  
+  /* Layout */
+  .ani
+  {
+    background: var(--vtbghome);
+  }
+  .service {
+    /* background-image: url(./img/backgound.jpg); */
+
+  }
+  .service .head-section {
+    /* background-color: #f2f2f2; */
+    padding: 90px 0 90px;
+  }
+  .service .head-section h2 {
+    color: var(--vtcolorlink);
+    font-size: 33px;
+    line-height: 1.1;
+    
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 3px rgba(211, 207, 207, 0.641);
+
+
+  }
+  .service .service-list {
+  
+    position: relative;
+    top: -40px;
+    /* width: 1150px; */
+  }
+  .service .service-list li {
+    background-color: #fff;
+    float: left;
+    margin-right: 25px;
+    min-height: 220px;
+    padding: 15px 30px;
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+  }
+  .service .service-list li:last-child {
+    margin-right: 0;
+  }
+
+
+  .service .service-list li h3 {
+    color: rgb(134, 7, 7);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .clearfix .text-1
+{
+    color: black;
+}
+
+.run 
+{
+    width: 200px;
+            height:120px;
+
+            /* background:url(./img/z3819118617073_ab69c73ba907add068b529f59b2b0662.jpg); */
+           position: relative;
+           background-size:contain;
+            animation: runrun  ease-in-out 10s infinite;
+}
+
+@keyframes runrun
+{
+    0%
+    { background-image:url(./img/run.jpg) ;left: 0px; top: 0px; }
+    25%
+    { background-image:url(./img/run_1.jpg) ;left: 1280px; top: 0px; border-radius: 100%;}
+    50%
+    { background-image:url(./img/ben_2.jpg) ;left: 1280px; top: -440px; border-radius: 100%;}
+    75%
+    { background-image:url(./img/mec_2.jpg) ;left: 0px; top: -440px; border-radius: 100%;}
+    100%
+    { background-image:url(./img/run_1.jpg) ;left: 0px; top: 0px; border-radius: 100%;}
+    
+}   
+
+.service
+{
+    animation-name: opacity;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    position: relative;
+   
+
+}
+
+@keyframes opacity
+{
+    from
+    { opacity:0%; }
+    to
+    { opacity: 100%;}
+
+}
+
